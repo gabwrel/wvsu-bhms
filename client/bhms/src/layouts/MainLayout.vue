@@ -61,6 +61,12 @@ const linksList = [
     link: '/home'
   },
   {
+    title: 'Dashboard',
+    caption: '',
+    icon: 'dashboard',
+    link: '/dashboardPage'
+  },
+  {
     title: 'Tenants Profile',
     caption: '',
     icon: 'person',
@@ -79,10 +85,10 @@ const linksList = [
     link: ''
   },
   {
-    title: 'Collectibles',
+    title: "Collectible List",
     caption: '',
     icon: 'payments',
-    link: ''
+    link: '/collectibleList'
   },
   {
     title: 'Settings',
@@ -91,10 +97,10 @@ const linksList = [
     link: ''
   },
   {
-    title: 'Help',
+    title: 'About Us',
     caption: '',
-    icon: 'help',
-    link: ''
+    icon: 'info',
+    link: '/aboutUs'
   },
 ]
 

@@ -1,7 +1,13 @@
 <template>
-  <div class="q-pa-md row items-start q-gutter-md">
+  <div>
+    <q-toolbar class="q-pa-md justify-center">
+      <q-toolbar-title class="page-title justify-center">Unit Types</q-toolbar-title>
+    </q-toolbar>
+    <!-- rest of the page content -->
+  </div>
+  <div class="q-pa-md row items-start q-gutter-md justify-center">
   <q-card class="my-card" flat bordered>
-    <q-img src="~assets/apt-1.jpg" />
+    <q-img src="~assets/chateau/room-1.jpg" />
 
     <q-card-section>
       <div class="row no-wrap items-center">
@@ -27,9 +33,9 @@
 
   </q-card>
   </div>
-  <div class="q-pa-md row items-start q-gutter-md">
+  <div class="q-pa-md row items-start q-gutter-md justify-center">
     <q-card class="my-card" flat bordered>
-      <q-img src="~assets/apt-2.jpg" />
+      <q-img src="~assets/chateau/room-2.jpg" />
 
       <q-card-section>
         <div class="row no-wrap items-center">
@@ -55,9 +61,9 @@
 
     </q-card>
   </div>
-  <div class="q-pa-md row items-start q-gutter-md">
+  <div class="q-pa-md row items-start q-gutter-md justify-center">
     <q-card class="my-card" flat bordered>
-      <q-img src="~assets/apt-2.jpg" />
+      <q-img src="~assets/chateau/room-5.jpg" />
 
       <q-card-section>
         <div class="row no-wrap items-center">
@@ -98,6 +104,12 @@ export default {
 
 <style lang="sass" scoped>
 .my-card
-  width: 70%
-  //max-width: 500px
+  width: 100%
+  max-width: 800px
+  //padding: 10px
+  //margin-left: 60px
+.page-title
+  color: $lime-10
+  font-size: 50px
+  font-weight: bold
 </style>
