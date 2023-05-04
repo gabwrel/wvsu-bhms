@@ -39,6 +39,14 @@ public class TenantServiceIntegrationTest extends BhmsApplicationTests {
         assertNotNull(saved);
     }
 
+    @Test
+    public void delete() {
+        Tenant saved = tenantService.create(buildTenant());
+        tenantService.delete(saved.getId());
+        Tenant found = tenantService.findById(saved.getId());
+        assertNull(found);
+    }
+
     private static Tenant buildTenant() {
         Tenant tenant = new Tenant();
         tenant.setFirstName(RandomString.make());

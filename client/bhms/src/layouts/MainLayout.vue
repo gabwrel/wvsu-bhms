@@ -55,12 +55,6 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
-    title: 'Home',
-    caption: '',
-    icon: 'home',
-    link: '/home'
-  },
-  {
     title: 'Dashboard',
     caption: '',
     icon: 'dashboard',
@@ -85,7 +79,7 @@ const linksList = [
     link: ''
   },
   {
-    title: "Collectible List",
+    title: "Collectibles",
     caption: '',
     icon: 'payments',
     link: '/collectibleList'

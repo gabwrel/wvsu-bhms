@@ -34,6 +34,17 @@ public class TenantServiceImpl implements TenantService {
         return tenantRepository.save(tenant);
     }
 
+    @Override
+    public void delete(long id) {
+        tenantRepository.deleteById(id);
+    }
+
+    @Override
+    public Tenant findById(long id) {
+        Optional<Tenant> found = tenantRepository.findById(id);
+        return found.orElse(null);
+    }
+
     private static Tenant checkTenantNameIfAlreadyExisting(Tenant existingById, Tenant existingByFirstNameAndLastName) {
         if (existingByFirstNameAndLastName != null) {
             if (existingById.getId() != existingByFirstNameAndLastName.getId()) {

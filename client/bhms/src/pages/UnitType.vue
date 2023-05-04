@@ -17,7 +17,7 @@
 
       </div>
 
-      <q-rating v-model="stars" :max="5" size="32px" />
+<!--      <q-rating v-model="stars" :max="5" size="32px" />-->
     </q-card-section>
 
     <q-card-section class="q-pt-none">
@@ -45,7 +45,7 @@
 
         </div>
 
-        <q-rating v-model="stars" :max="5" size="32px" />
+<!--        <q-rating v-model="stars" :max="5" size="32px" />-->
       </q-card-section>
 
       <q-card-section class="q-pt-none">
@@ -68,12 +68,13 @@
       <q-card-section>
         <div class="row no-wrap items-center">
           <div class="col text-h6 ellipsis">
-            Room 102
+            Room 105
           </div>
 
         </div>
-
-        <q-rating v-model="stars" :max="5" size="32px" />
+        <q-badge color="positive" v-if="available">Available</q-badge>
+        <q-badge color="negative" v-else>Unavailable</q-badge>
+<!--        <q-rating v-model="stars" :max="5" size="32px" />-->
       </q-card-section>
 
       <q-card-section class="q-pt-none">

@@ -62,20 +62,26 @@ const rows = [
     action: ""
   },
   {
-    roomNumber: 104,
+    roomNumber: 105,
     name: 'Doja Cat',
     address: '221B Cemetery Lane, Misty Mountains',
     contactNumber: '995 796 322',
     action: ""
   },
   {
-    roomNumber: 105,
+    roomNumber: 106,
     name: 'Kendrick Lamar',
     address: '221B Cemetery Lane, Misty Mountains',
     contactNumber: '995 796 322',
     action: ""
   },
-
+  {
+    roomNumber: 106,
+    name: 'Chris Brown',
+    address: '221B Cemetery Lane, Misty Mountains',
+    contactNumber: '995 796 322',
+    action: ""
+  },
 ]
 
 export default {
